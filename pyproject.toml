@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "deep_rl"
+version = "0.1.0"
+description = "Environment to learn Deep Reinforcement Learning"
+authors = ["Mi Lu <75062245+mlu-ai@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.9"
+six = "^1.16.0"
+swig = "^4.2.1"
+gymnasium = {extras = ["classic-control"], version = "^0.29.1"}
+jupyter = "^1.1.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.4"
+mypy = "^1.11.2"
+pytest = "^8.3.2"
+pre-commit = "^3.8.0"
+black = "^24.8.0"
+Sphinx = "^8.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
